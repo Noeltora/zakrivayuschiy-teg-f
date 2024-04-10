@@ -1,1 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-color-light: #fff;
+  --font-color-light: #000;
+  --bg-color-dark: #000;
+  --font-color-dark: #00cc14;
+  --gradient-for-light: repeating-linear-gradient(
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --gradient-for-dark: repeating-linear-gradient(
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+  --heart-color-light: #ff0000;
+  --heart-color-dark: #00cc14;
+
+  --main-font-family: "Inter", sans-serif;
+  --accent-font-family: "PressStart2P", sans-serif;
+  --main-font-weight-normal: var(--main-font-weight-normal-light);
+  --main-font-weight-bold: var(--main-font-weight-bold-light);
+  --bg-color: var(--bg-color-light, #fff);
+  --font-color: var(--font-color-light, #000);
+  --bg-image: var(--gradient-for-light);
+  --main-button-text-color: var(--bg-color, #fff);
+  --contour: var(--font-color-light, #000);
+  --core-heart: var(--bg-color-light, #fff);
+  --sparks: var(--heart-color-light, #ff0000);
+}
