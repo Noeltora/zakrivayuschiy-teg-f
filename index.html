@@ -563,17 +563,15 @@
       </button>
     </footer>
     <dialog id="dialog-id">
-      <svg class="dialog-picture" viewBox="0 0 39 39">
-        <use href="svg/floppy.svg#floppy"></use>
-      </svg>
-      <span class="dialog-text">Вставьте дискету, чтобы продолжить</span>
-      <button
-        class="dialog-button-ok"
-        type="button"
-        onclick="window['dialog-id'].close();"
-      >
-        ОК
-      </button>
+      <div class="dialog_form">
+        <svg class="dialog-picture" viewBox="0 0 39 39">
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="dialog-text">Вставьте дискету, чтобы продолжить</span>
+      </div>
+      <form method="dialog">
+        <button class="dialog-button-ok" type="submit">ОК</button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

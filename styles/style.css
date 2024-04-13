@@ -286,7 +286,6 @@
 }
 
 dialog {
-  display: grid;
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
@@ -296,14 +295,16 @@ dialog {
   font-family: var(--accent-font-family, "PressStart2P", sans-serif);
   background-color: var(--bg-color, #fff);
   color: var(--font-color, #000);
-  grid-template-areas:
-    "dialog-picture dialog-text"
-    "dialog-button dialog-button";
   padding: 30px;
-  gap: 30px 20px;
   overflow: hidden;
   text-transform: uppercase;
   line-height: 1.5;
+}
+
+dialog[open] {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
 }
 
 dialog:not([open]) {
@@ -315,15 +316,16 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.dialog-picture {
-  margin-block-start: 10px;
-  block-size: 39px;
-  inline-size: 39px;
-  grid-area: dialog-picture;
+.dialog_form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.dialog-text {
-  grid-area: dialog-text;
+.dialog-picture {
+  block-size: 39px;
+  inline-size: 39px;
+  flex-shrink: 0;
 }
 
 .dialog-button-ok {
