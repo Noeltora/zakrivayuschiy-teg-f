@@ -14,7 +14,7 @@
     linear-gradient(#007f0c, #004306);
   --main-button-text-color: var(--font-color-dark, #00cc14);
   --contour: var(--heart-color-dark, #00cc14);
-  --sparks: var(--heart-color-dark, #00cc14);
+  --sparks: var(--heart-color-light, #ff0000);
 }
 
 :root.theme-light {
@@ -41,6 +41,6 @@
       linear-gradient(#007f0c, #004306);
     --main-button-text-color: var(--font-color-dark, #00cc14);
     --contour: var(--heart-color-dark, #00cc14);
-    --sparks: var(--heart-color-dark, #00cc14);
+    --sparks: var(--heart-color-light, #ff0000);
   }
 }

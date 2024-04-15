@@ -20,7 +20,7 @@
   --heart-color-dark: #00cc14;
 
   --main-font-family: "Inter", sans-serif;
-  --accent-font-family: "PressStart2P", sans-serif;
+  --accent-font-family: "PressStart2P", fantasy;
   --main-font-weight-normal: var(--main-font-weight-normal-light);
   --main-font-weight-bold: var(--main-font-weight-bold-light);
   --bg-color: var(--bg-color-light, #fff);
